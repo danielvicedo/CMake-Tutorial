@@ -24,34 +24,27 @@ http://www.linuxintro.org/wiki/Set_up_a_Webcam_with_Linux
       - ADD_EXECUTABLE(${PROJECT_NAME} webcam_capture.cpp)
       - #Link with libraries
       - TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${OpenCV_LIBS})
-      - # Setting this prefix will be used by INSTALL commands in next CMakeLists
+      - #Setting this prefix will be used by INSTALL commands in next CMakeLists
       - SET(CMAKE_INSTALL_PREFIX /usr/local)
       - #install
       - INSTALL(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
-      - # you require to have installed OpenCV for this project.
 
 4. Go to the console and write the following instructions:
-  - cd webcam_capture_folder
-# "webcam_capture_folder" is the folder's name
-  - mkdir build
-# create a new folder called build  
-  - cd build
-# enter into the folder
-  - cmake ..
-# execute cmake to the folder below, in this case webcam_capture_folder
-  - make
-# create the executable for your code   
-  - ./webcam_capture
-# execute your code
+  - cd webcam_capture_folder #"webcam_capture_folder" is the folder's name#
+  - mkdir build #create a new folder called build#
+  - cd build #enter into the folder#
+  - cmake .. #execute cmake to the folder below, in this case webcam_capture_folder#
+  - make #create the executable for your code#
+  - ./webcam_capture #execute your code#
 
 #To close the webcam press CONTROL+C in the console.
 
 
-#How to upload images into a README.md
+# How to upload images into a README.md
 
-#Search for the Markdown Cheat Sheet
-#Upload your photo to your repository via commit and push
-#Use ![ScreenShot]("link to your photo")
-#To get the link, go the GitHub, found your photo, right click on it and open it in a new tab. Copy the URL from the new tab.
+1. Search for the Markdown Cheat Sheet
+2. Upload your photo to your repository via commit and push
+3. Use ![ScreenShot]("link to your photo")
+4. To get the link, go the GitHub, found your photo, right click on it and open it in a new tab. Copy the URL from the new tab.
 
 ![ScreenShot](https://raw.githubusercontent.com/danielvicedo/CMake-tutorial/master/webcam_capture/media/Webcam_capture.png)
