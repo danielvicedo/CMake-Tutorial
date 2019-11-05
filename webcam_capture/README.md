@@ -32,12 +32,12 @@ http://www.linuxintro.org/wiki/Set_up_a_Webcam_with_Linux
 4. Go to the console and write the following instructions (##"are comments that don't need to be written"):
   - cd webcam_capture_folder  ##"webcam_capture_folder" is the folder's name
   - mkdir build ##create a new folder called build
-  - cd build ##enter into the folder
-  - cmake .. ##execute cmake to the folder below, in this case webcam_capture_folder
+  - cd build ##change directory into the folder
+  - cmake .. ##execute cmake to the folder above, in this case webcam_capture_folder
   - make ##create the executable for your code
   - ./webcam_capture ##execute your code
 
-#To close the webcam press CONTROL+C in the console.
+#To close the webcam_capture press CONTROL+C in the console.
 
 
 # How to upload images into a README.md
